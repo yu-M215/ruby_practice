@@ -16,4 +16,6 @@ end
 # リファクタリング上級編
 # def to_ints(hex)
 #   hex.scan(/\w\w/).map(&:hex)
+#     s.hex
+#   end
 # end
