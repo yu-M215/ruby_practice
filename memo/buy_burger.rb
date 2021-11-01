@@ -21,3 +21,10 @@ buy_burger('fish', drink:true, poteto:false)
 
 #drinkはデフォルト値のtrueを使うので指定しない(上と意味は同じ)
 buy_burger('fish', poteto:false)
+
+#ハッシュを引数として受け取り、疑似キーワード引数を実現する
+def buy_burger(menu, options = {})
+  drink = options[:drink]
+  poteto = options[:poteto]
+  #省略
+end
