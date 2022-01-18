@@ -23,10 +23,16 @@ class DVD < Product
   #   @running_time = running_time
   # end
 
+  # def initialize(name, price)
+  #   # 引数をすべてスーパークラスのメソッドに渡す。super(name, price)と書いたのと同じ
+  #   super
+  #   # サブクラスで必要な初期化処理を書く
+  # end
+
   def initialize(name, price)
-    # 引数をすべてスーパークラスのメソッドに渡す。super(name, price)と書いたのと同じ
-    super
-    # サブクラスで必要な初期化処理を書く
+    # super()だと引数なしでスーパークラスのメソッドを呼び出す
+    # (ただし数が合わないのでこのコードはエラーになる)
+    super()
   end
 end
 
