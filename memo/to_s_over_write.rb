@@ -22,7 +22,9 @@ class DVD < Product
 
   # to_sメソッドをオーバーライドする
   def to_s
-    "name: #{name}, price: #{price}, running_time: #{running_time}"
+    # "name: #{name}, price: #{price}, running_time: #{running_time}"
+    # superでスーパークラスのto_sメソッドを呼び出す
+    "#{super}, running_time: #{running_time}"
   end
 end
 
