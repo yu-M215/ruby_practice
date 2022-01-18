@@ -19,6 +19,11 @@ class DVD < Product
     super(name, price)
     @running_time = running_time
   end
+
+  # to_sメソッドをオーバーライドする
+  def to_s
+    "name: #{name}, price: #{price}, running_time: #{running_time}"
+  end
 end
 
 product = Product.new('A great movie', 1000)
