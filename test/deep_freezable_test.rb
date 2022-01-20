@@ -21,6 +21,6 @@ class DeepFreezableTest < Minitest::Test
     # ハッシュ自身がfreezeされているか？
     assert Bank::CURRENCIES.frozen?
     # ハッシュの要素（キーと値）がすべてfreezeされているか？
-    assert Bank::CURRENSIES.all? { |key, value| key.frozen? && value.frozen? }
+    assert Bank::CURRENCIES.all? { |key, value| key.frozen? && value.frozen? }
   end
 end
